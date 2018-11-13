@@ -15,10 +15,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+        //(NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController).stopRecording(NSObject())
     }
 
     @IBAction func newRecording(_ sender: Any) {
@@ -40,5 +41,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
     }
     
+    @IBAction func customAboutPanel(_ sender: Any) {
+        
+    }
 }
 

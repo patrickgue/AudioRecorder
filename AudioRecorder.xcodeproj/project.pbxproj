@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD5FDFAC219B5CE500BB5946 /* 256.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5FDFAB219B5CE500BB5946 /* 256.png */; };
+		CD5FDFAF219B5D9C00BB5946 /* AboutHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5FDFAE219B5D9C00BB5946 /* AboutHelpController.swift */; };
 		CD9E87432199F8AF004904F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E87422199F8AF004904F0 /* AppDelegate.swift */; };
 		CD9E87452199F8AF004904F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E87442199F8AF004904F0 /* ViewController.swift */; };
 		CD9E87472199F8B0004904F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9E87462199F8B0004904F0 /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD5FDFAB219B5CE500BB5946 /* 256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 256.png; sourceTree = "<group>"; };
+		CD5FDFAE219B5D9C00BB5946 /* AboutHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutHelpController.swift; sourceTree = "<group>"; };
 		CD9E873F2199F8AF004904F0 /* AudioRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9E87422199F8AF004904F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD9E87442199F8AF004904F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD5FDFAD219B5CEB00BB5946 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CD5FDFAB219B5CE500BB5946 /* 256.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		CD9E87362199F8AF004904F0 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,7 @@
 		CD9E87412199F8AF004904F0 /* AudioRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				CD5FDFAD219B5CEB00BB5946 /* Images */,
 				CDFEB33B219B17BE00C7A38D /* Bundle */,
 				CD9E87422199F8AF004904F0 /* AppDelegate.swift */,
 				CD9E87442199F8AF004904F0 /* ViewController.swift */,
@@ -113,6 +126,7 @@
 				CD9E874C2199F8B0004904F0 /* AudioRecorder.entitlements */,
 				CD9E87702199FC26004904F0 /* AudioControl.swift */,
 				CDFEB338219AE55400C7A38D /* AudioMeter.swift */,
+				CD5FDFAE219B5D9C00BB5946 /* AboutHelpController.swift */,
 			);
 			path = AudioRecorder;
 			sourceTree = "<group>";
@@ -249,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDFEB340219B18A200C7A38D /* help.css in Resources */,
+				CD5FDFAC219B5CE500BB5946 /* 256.png in Resources */,
 				CD9E87472199F8B0004904F0 /* Assets.xcassets in Resources */,
 				CDFEB33D219B17D000C7A38D /* help.html in Resources */,
 				CD9E874A2199F8B0004904F0 /* Main.storyboard in Resources */,
@@ -280,6 +295,7 @@
 				CD9E87432199F8AF004904F0 /* AppDelegate.swift in Sources */,
 				CDFEB339219AE55400C7A38D /* AudioMeter.swift in Sources */,
 				CD9E87712199FC26004904F0 /* AudioControl.swift in Sources */,
+				CD5FDFAF219B5D9C00BB5946 /* AboutHelpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,8 +461,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AudioRecorder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +473,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = ch.patrickguenthard.AudioRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -463,8 +482,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AudioRecorder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,6 +494,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = ch.patrickguenthard.AudioRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
