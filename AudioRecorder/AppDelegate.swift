@@ -21,6 +21,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
-
+    @IBAction func newRecording(_ sender: Any) {
+        (NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController).setPath(sender)
+    }
+    
+    @IBAction func startRecording(_ sender: Any) {
+        (NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController).startRecording(sender)
+    }
+    
+    @IBAction func stopRecording(_ sender: Any) {
+        (NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController).stopRecording(sender)
+    }
+    
+    @IBAction func showHelp(_ sender: Any) {
+        
+        let url = Bundle.main.url(forResource: "help", withExtension: "html")
+        NSWorkspace.shared.open(url!)
+        
+    }
+    
 }
 

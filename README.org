@@ -1,0 +1,16 @@
+#+TITLE:AudioRecorder
+
+* Summary
+
+AudioRecorder is a simple tool to record audio from a microphone or similar 
+input device using the AVAudioRecorder API for macOS. The format and sample 
+rate are currently hardcoded to AAC/M4A and 44100 Hz respectably.
+
+* Screenshot
+
+[[./Documentation/Screenshot.png][Screenshot]]
+
+* Known Issue
+
+ * If the recording gets paused, the timer on the left hand side will output
+   wrong data. The recording of the audio works without issues.

@@ -13,6 +13,10 @@
 		CD9E874A2199F8B0004904F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9E87482199F8B0004904F0 /* Main.storyboard */; };
 		CD9E87562199F8B0004904F0 /* AudioRecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E87552199F8B0004904F0 /* AudioRecorderTests.swift */; };
 		CD9E87612199F8B0004904F0 /* AudioRecorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E87602199F8B0004904F0 /* AudioRecorderUITests.swift */; };
+		CD9E87712199FC26004904F0 /* AudioControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E87702199FC26004904F0 /* AudioControl.swift */; };
+		CDFEB339219AE55400C7A38D /* AudioMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEB338219AE55400C7A38D /* AudioMeter.swift */; };
+		CDFEB33D219B17D000C7A38D /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = CDFEB33C219B17D000C7A38D /* help.html */; };
+		CDFEB340219B18A200C7A38D /* help.css in Resources */ = {isa = PBXBuildFile; fileRef = CDFEB33F219B18A200C7A38D /* help.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		CD9E875C2199F8B0004904F0 /* AudioRecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioRecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9E87602199F8B0004904F0 /* AudioRecorderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderUITests.swift; sourceTree = "<group>"; };
 		CD9E87622199F8B0004904F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD9E87702199FC26004904F0 /* AudioControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioControl.swift; sourceTree = "<group>"; };
+		CDFEB338219AE55400C7A38D /* AudioMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMeter.swift; sourceTree = "<group>"; };
+		CDFEB33C219B17D000C7A38D /* help.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = help.html; sourceTree = "<group>"; };
+		CDFEB33F219B18A200C7A38D /* help.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = help.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +104,15 @@
 		CD9E87412199F8AF004904F0 /* AudioRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				CDFEB33B219B17BE00C7A38D /* Bundle */,
 				CD9E87422199F8AF004904F0 /* AppDelegate.swift */,
 				CD9E87442199F8AF004904F0 /* ViewController.swift */,
 				CD9E87462199F8B0004904F0 /* Assets.xcassets */,
 				CD9E87482199F8B0004904F0 /* Main.storyboard */,
 				CD9E874B2199F8B0004904F0 /* Info.plist */,
 				CD9E874C2199F8B0004904F0 /* AudioRecorder.entitlements */,
+				CD9E87702199FC26004904F0 /* AudioControl.swift */,
+				CDFEB338219AE55400C7A38D /* AudioMeter.swift */,
 			);
 			path = AudioRecorder;
 			sourceTree = "<group>";
@@ -122,6 +133,15 @@
 				CD9E87622199F8B0004904F0 /* Info.plist */,
 			);
 			path = AudioRecorderUITests;
+			sourceTree = "<group>";
+		};
+		CDFEB33B219B17BE00C7A38D /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				CDFEB33C219B17D000C7A38D /* help.html */,
+				CDFEB33F219B18A200C7A38D /* help.css */,
+			);
+			path = Bundle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +248,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFEB340219B18A200C7A38D /* help.css in Resources */,
 				CD9E87472199F8B0004904F0 /* Assets.xcassets in Resources */,
+				CDFEB33D219B17D000C7A38D /* help.html in Resources */,
 				CD9E874A2199F8B0004904F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +278,8 @@
 			files = (
 				CD9E87452199F8AF004904F0 /* ViewController.swift in Sources */,
 				CD9E87432199F8AF004904F0 /* AppDelegate.swift in Sources */,
+				CDFEB339219AE55400C7A38D /* AudioMeter.swift in Sources */,
+				CD9E87712199FC26004904F0 /* AudioControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +445,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AudioRecorder/AudioRecorder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AudioRecorder/Info.plist;
@@ -429,6 +452,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = ch.patrickguenthard.AudioRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -439,7 +463,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AudioRecorder/AudioRecorder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AudioRecorder/Info.plist;
@@ -447,6 +470,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = ch.patrickguenthard.AudioRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
