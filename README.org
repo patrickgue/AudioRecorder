@@ -4,7 +4,7 @@
 
 AudioRecorder is a simple tool to record audio from a microphone or similar 
 input device using the AVAudioRecorder API for macOS. The format and sample 
-rate are currently hardcoded to AAC/M4A and 44100 Hz respectably.
+rate are currently hardcoded to AAC/M4A and 44100 Hz respectively.
 
 * Screenshot
 
