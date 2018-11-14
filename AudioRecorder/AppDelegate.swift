@@ -33,16 +33,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func stopRecording(_ sender: Any) {
         (NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController).stopRecording(sender)
     }
-    
-    @IBAction func showHelp(_ sender: Any) {
-        
-        let url = Bundle.main.url(forResource: "help", withExtension: "html")
-        NSWorkspace.shared.open(url!)
-        
-    }
-    
-    @IBAction func customAboutPanel(_ sender: Any) {
-        
-    }
 }
 

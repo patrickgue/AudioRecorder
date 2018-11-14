@@ -16,7 +16,6 @@ class AboutController:NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.image = NSImageView(image: NSImage(byReferencingFile: "Images/256.png")!)
         self.image.display()
     }

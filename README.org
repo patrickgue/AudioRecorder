@@ -10,7 +10,4 @@ rate are currently hardcoded to AAC/M4A and 44100 Hz respectably.
 
 [[./Documentation/Screenshot.png]]
 
-* Known Issue
 
- * If the recording gets paused, the timer on the left hand side will output
-   wrong data. The recording of the audio works without issues.

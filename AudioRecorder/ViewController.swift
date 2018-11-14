@@ -83,7 +83,7 @@ class ViewController: NSViewController {
             self.openButton.isEnabled = true
             self.timer?.cancel()
             self.audioMeter.decibel = -120
-            self.timeLabel.stringValue = "--"
+            self.timeLabel.stringValue = ""
             self.fileLabel.stringValue = ""
             self.audioMeter.display()
             

@@ -28,6 +28,11 @@
 	<string>Main</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>For using microphone</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Akzidenz-Grotesk BQ Regular.ttf</string>
+		<string>Akzidenz-Grotesk BQ Medium.ttf</string>
+	</array>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>

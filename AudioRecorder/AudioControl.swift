@@ -40,8 +40,9 @@ class AudioControl:NSObject,AVAudioRecorderDelegate {
     
     
     func startRecord() {
+        print(recorder?.currentTime)
         if(Int((recorder?.currentTime)!) > 0) {
-            recorder?.record(atTime: (recorder?.currentTime)!)
+            recorder?.record(atTime: (recorder?.deviceCurrentTime)!)
         }
         else {
             recorder!.record()
