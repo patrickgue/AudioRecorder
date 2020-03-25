@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD0E775E219C18B800A98CF8 /* Akzidenz-Grotesk BQ Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD0E775C219C18B800A98CF8 /* Akzidenz-Grotesk BQ Regular.ttf */; };
-		CD0E775F219C18B800A98CF8 /* Akzidenz-Grotesk BQ Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD0E775D219C18B800A98CF8 /* Akzidenz-Grotesk BQ Medium.ttf */; };
 		CD5FDFAC219B5CE500BB5946 /* 256.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5FDFAB219B5CE500BB5946 /* 256.png */; };
 		CD5FDFAF219B5D9C00BB5946 /* AboutHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5FDFAE219B5D9C00BB5946 /* AboutHelpController.swift */; };
 		CD9E87432199F8AF004904F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E87422199F8AF004904F0 /* AppDelegate.swift */; };
@@ -41,8 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CD0E775C219C18B800A98CF8 /* Akzidenz-Grotesk BQ Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akzidenz-Grotesk BQ Regular.ttf"; sourceTree = "<group>"; };
-		CD0E775D219C18B800A98CF8 /* Akzidenz-Grotesk BQ Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Akzidenz-Grotesk BQ Medium.ttf"; sourceTree = "<group>"; };
 		CD5FDFAB219B5CE500BB5946 /* 256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 256.png; sourceTree = "<group>"; };
 		CD5FDFAE219B5D9C00BB5946 /* AboutHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutHelpController.swift; sourceTree = "<group>"; };
 		CD9E873F2199F8AF004904F0 /* AudioRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,15 +85,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CD0E775B219C175200A98CF8 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				CD0E775D219C18B800A98CF8 /* Akzidenz-Grotesk BQ Medium.ttf */,
-				CD0E775C219C18B800A98CF8 /* Akzidenz-Grotesk BQ Regular.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		CD5FDFAD219B5CEB00BB5946 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +116,6 @@
 		CD9E87412199F8AF004904F0 /* AudioRecorder */ = {
 			isa = PBXGroup;
 			children = (
-				CD0E775B219C175200A98CF8 /* Fonts */,
 				CD5FDFAD219B5CEB00BB5946 /* Images */,
 				CDFEB33B219B17BE00C7A38D /* Bundle */,
 				CD9E87422199F8AF004904F0 /* AppDelegate.swift */,
@@ -277,9 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDFEB340219B18A200C7A38D /* help.css in Resources */,
-				CD0E775F219C18B800A98CF8 /* Akzidenz-Grotesk BQ Medium.ttf in Resources */,
 				CD5FDFAC219B5CE500BB5946 /* 256.png in Resources */,
-				CD0E775E219C18B800A98CF8 /* Akzidenz-Grotesk BQ Regular.ttf in Resources */,
 				CD9E87472199F8B0004904F0 /* Assets.xcassets in Resources */,
 				CDFEB33D219B17D000C7A38D /* help.html in Resources */,
 				CD9E874A2199F8B0004904F0 /* Main.storyboard in Resources */,

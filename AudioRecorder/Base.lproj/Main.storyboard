@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -131,7 +132,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="106" y="-92"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -157,10 +158,10 @@
         <scene sceneID="xq1-lp-cPx">
             <objects>
                 <windowController id="C5J-Wo-s38" sceneMemberID="viewController">
-                    <window key="window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="darkAqua" frameAutosaveName="" animationBehavior="default" tabbingIdentifier="help" titlebarAppearsTransparent="YES" id="hBk-yO-hBj">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
+                    <window key="window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="darkAqua" frameAutosaveName="" animationBehavior="default" tabbingIdentifier="help" titlebarAppearsTransparent="YES" id="hBk-yO-hBj">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="245" y="310" width="480" height="270"/>
+                        <rect key="contentRect" x="245" y="311" width="575" height="269"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
                         <connections>
                             <outlet property="delegate" destination="C5J-Wo-s38" id="dpk-de-nfL"/>
@@ -172,7 +173,7 @@
                 </windowController>
                 <customObject id="1Yu-P6-xG8" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694" y="250"/>
+            <point key="canvasLocation" x="741.5" y="250.5"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="p0n-6R-5ht">
@@ -183,9 +184,9 @@
                         <tabViewItem identifier="" id="pX0-9i-gb3"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="HVQ-06-IDF">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="638" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <font key="font" metaFont="message"/>
+                        <font key="font" metaFont="system"/>
                         <connections>
                             <outlet property="delegate" destination="vPQ-ie-CGx" id="KsV-aY-HxV"/>
                         </connections>
@@ -198,18 +199,18 @@
                 </tabViewController>
                 <customObject id="ldR-fw-X8L" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1265" y="235"/>
+            <point key="canvasLocation" x="1444" y="257"/>
         </scene>
         <!--About-->
         <scene sceneID="mO9-F3-MoS">
             <objects>
                 <viewController title="About" id="BfS-Rw-BhM" customClass="AboutController" customModule="AudioRecorder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="inL-Is-jYq">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="733" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <splitView fixedFrame="YES" arrangesAllSubviews="NO" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a6X-X3-ALM">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="733" height="300"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <customView fixedFrame="YES" id="6xd-6K-rDE">
@@ -225,7 +226,7 @@
                                                 <rect key="frame" x="28" y="207" width="93" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                                 <textFieldCell key="cell" lineBreakMode="clipping" title="AudioRecorder" id="7fc-lz-Dqg">
-                                                    <font key="font" size="13" name="AkzidenzGroteskBQ-Medium"/>
+                                                    <font key="font" metaFont="systemBold" size="12"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
@@ -233,8 +234,8 @@
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcN-jW-9Kx">
                                                 <rect key="frame" x="18" y="77" width="120" height="122"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                                <textFieldCell key="cell" alignment="center" title="Copyright © 2018 Patrick Günthard. All rights reserved." id="yrb-Bq-67O">
-                                                    <font key="font" size="13" name="AkzidenzGroteskBQ-Reg"/>
+                                                <textFieldCell key="cell" alignment="center" title="Copyright © 2019 Patrick Günthard. All rights reserved." id="yrb-Bq-67O">
+                                                    <font key="font" metaFont="system" size="12"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
@@ -242,23 +243,23 @@
                                         </subviews>
                                     </customView>
                                     <customView fixedFrame="YES" id="GNa-A1-7ME">
-                                        <rect key="frame" x="157" y="0.0" width="293" height="300"/>
+                                        <rect key="frame" x="157" y="0.0" width="576" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxp-rV-Xnw">
-                                                <rect key="frame" x="20" y="20" width="253" height="230"/>
+                                                <rect key="frame" x="20" y="20" width="536" height="230"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="DSK-PQ-fGp">
-                                                    <rect key="frame" x="0.0" y="0.0" width="253" height="230"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="536" height="230"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <textView ambiguous="YES" editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="Mth-3T-096">
-                                                            <rect key="frame" x="0.0" y="0.0" width="253" height="794"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="536" height="352"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                            <size key="minSize" width="253" height="230"/>
-                                                            <size key="maxSize" width="410" height="10000000"/>
+                                                            <size key="minSize" width="536" height="230"/>
+                                                            <size key="maxSize" width="554" height="10000000"/>
                                                             <attributedString key="textStorage">
                                                                 <fragment>
                                                                     <mutableString key="content">Copyright (c) 2018, Patrick Günthard
@@ -290,7 +291,7 @@ either expressed or implied, of the AudioRecorder project.
 </mutableString>
                                                                     <attributes>
                                                                         <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                        <font key="NSFont" size="11" name="Menlo-Regular"/>
+                                                                        <font key="NSFont" metaFont="fixedUser" size="11"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -299,8 +300,12 @@ either expressed or implied, of the AudioRecorder project.
                                                         </textView>
                                                     </subviews>
                                                 </clipView>
+                                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="ywK-FH-THd">
+                                                    <rect key="frame" x="-100" y="-100" width="536" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </scroller>
                                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="tzq-DX-GPc">
-                                                    <rect key="frame" x="237" y="0.0" width="16" height="230"/>
+                                                    <rect key="frame" x="520" y="0.0" width="16" height="230"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </scroller>
                                             </scrollView>
@@ -308,7 +313,7 @@ either expressed or implied, of the AudioRecorder project.
                                                 <rect key="frame" x="18" y="263" width="50" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <textFieldCell key="cell" lineBreakMode="clipping" title="License" id="aDv-k9-DM9">
-                                                    <font key="font" size="13" name="AkzidenzGroteskBQ-Medium"/>
+                                                    <font key="font" metaFont="system"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
@@ -329,36 +334,36 @@ either expressed or implied, of the AudioRecorder project.
                 </viewController>
                 <customObject id="feV-3o-Qop" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2032" y="3"/>
+            <point key="canvasLocation" x="2305" y="0.0"/>
         </scene>
         <!--Help-->
         <scene sceneID="jQg-pK-gfi">
             <objects>
                 <viewController title="Help" id="VBX-xb-C1q" customClass="HelpController" customModule="AudioRecorder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="odV-Rd-eqh">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="733" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView appearanceType="aqua" fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stV-xW-I00">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="733" height="300"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="ir8-Iq-4fB">
-                                    <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="733" height="300"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView ambiguous="YES" editable="NO" selectable="NO" importsGraphics="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" allowsDocumentBackgroundColorChange="YES" smartInsertDelete="YES" id="XdX-fN-Crz">
-                                            <rect key="frame" x="0.0" y="-77" width="450" height="314"/>
+                                            <rect key="frame" x="0.0" y="-77" width="733" height="300"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" red="0.14118" green="0.16078000000000001" blue="0.18038999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <size key="minSize" width="450" height="300"/>
-                                            <size key="maxSize" width="450" height="10000000"/>
+                                            <size key="minSize" width="733" height="300"/>
+                                            <size key="maxSize" width="765" height="10000000"/>
                                             <attributedString key="textStorage">
                                                 <fragment content="Summary">
                                                     <attributes>
                                                         <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="NSColor" red="0.14118" green="0.16078000000000001" blue="0.18038999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="28" name="AkzidenzGroteskBQ-Medium"/>
+                                                        <font key="NSFont" size="16" name="Helvetica-Bold"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -371,7 +376,7 @@ Cg
 </string>
                                                     <attributes>
                                                         <color key="NSColor" red="0.14118" green="0.16078000000000001" blue="0.18038999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="16" name="AkzidenzGroteskBQ-Reg"/>
+                                                        <font key="NSFont" size="16" name="Helvetica"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -379,38 +384,13 @@ Cg
                                                     </attributes>
                                                 </fragment>
                                                 <fragment>
-                                                    <string key="content">AudioRecorder is a simple tool to record audio from a microphone or similar input device using the AVAudioRecorder API for macOS. The format and sample rate are currently hardcoded to AAC/M4A and 44100 Hz respectively.</string>
-                                                    <attributes>
-                                                        <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="NSColor" red="0.14118" green="0.16078000000000001" blue="0.18038999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="16" name="AkzidenzGroteskBQ-Reg"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment>
-                                                    <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.01176" green="0.40000000000000002" blue="0.83921999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="16" name="AkzidenzGroteskBQ-Reg"/>
-                                                        <real key="NSKern" value="0.0"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                            <tabStops/>
-                                                        </paragraphStyle>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment>
-                                                    <string key="content" base64-UTF8="YES">
-Cg
+                                                    <string key="content">AudioRecorder is a simple tool to record audio from a microphone or similar input device using the AVAudioRecorder API for macOS. The format and sample rate are currently hardcoded to AAC/M4A and 44100 Hz respectively
+
 </string>
                                                     <attributes>
                                                         <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="NSColor" red="0.14118" green="0.16078000000000001" blue="0.18038999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="16" name="AkzidenzGroteskBQ-Reg"/>
+                                                        <font key="NSFont" metaFont="user"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -421,7 +401,7 @@ Cg
                                                     <attributes>
                                                         <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="NSColor" red="0.14118" green="0.16078000000000001" blue="0.18038999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="28" name="AkzidenzGroteskBQ-Medium"/>
+                                                        <font key="NSFont" size="16" name="Helvetica-Bold"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -429,12 +409,24 @@ Cg
                                                     </attributes>
                                                 </fragment>
                                                 <fragment>
-                                                    <string key="content">
-Before the recording can be started, a new file has to be created by clicking on the button with the label </string>
+                                                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
                                                     <attributes>
                                                         <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="NSColor" red="0.14118" green="0.16078000000000001" blue="0.18038999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="16" name="AkzidenzGroteskBQ-Reg"/>
+                                                        <font key="NSFont" metaFont="user" size="13"/>
+                                                        <real key="NSKern" value="0.0"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="Before the recording can be started, a new file has to be created by clicking on the button with the label ">
+                                                    <attributes>
+                                                        <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="NSColor" red="0.14118" green="0.16078000000000001" blue="0.18038999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" metaFont="user"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -445,7 +437,7 @@ Before the recording can be started, a new file has to be created by clicking on
                                                     <attributes>
                                                         <color key="NSBackgroundColor" white="0.26515" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="16" name="AkzidenzGroteskBQ-Reg"/>
+                                                        <font key="NSFont" metaFont="user"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -456,7 +448,7 @@ Before the recording can be started, a new file has to be created by clicking on
                                                     <attributes>
                                                         <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="NSColor" red="0.14118" green="0.16078000000000001" blue="0.18038999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="16" name="AkzidenzGroteskBQ-Reg"/>
+                                                        <font key="NSFont" metaFont="user"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -467,7 +459,7 @@ Before the recording can be started, a new file has to be created by clicking on
                                                     <attributes>
                                                         <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="NSColor" red="0.14118" green="0.16078000000000001" blue="0.18038999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="16" name="LucidaGrande-Bold"/>
+                                                        <font key="NSFont" size="12" name="LucidaGrande"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -480,7 +472,7 @@ Then the recording can be started by clicking the recording button </string>
                                                     <attributes>
                                                         <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="NSColor" red="0.14118" green="0.16078000000000001" blue="0.18038999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="16" name="AkzidenzGroteskBQ-Reg"/>
+                                                        <font key="NSFont" metaFont="user"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -491,7 +483,7 @@ Then the recording can be started by clicking the recording button </string>
                                                     <attributes>
                                                         <color key="NSBackgroundColor" white="0.26515" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" size="16" name="LucidaGrande-Bold"/>
+                                                        <font key="NSFont" metaFont="user"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -502,7 +494,7 @@ Then the recording can be started by clicking the recording button </string>
                                                     <attributes>
                                                         <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="NSColor" red="0.14118" green="0.16078000000000001" blue="0.18038999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="16" name="AkzidenzGroteskBQ-Reg"/>
+                                                        <font key="NSFont" metaFont="user"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -513,7 +505,7 @@ Then the recording can be started by clicking the recording button </string>
                                                     <attributes>
                                                         <color key="NSBackgroundColor" white="0.26515" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" size="16" name="Menlo-Regular"/>
+                                                        <font key="NSFont" size="12" name="Menlo-Regular"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -524,7 +516,7 @@ Then the recording can be started by clicking the recording button </string>
                                                     <attributes>
                                                         <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="NSColor" red="0.14118" green="0.16078000000000001" blue="0.18038999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="16" name="AkzidenzGroteskBQ-Reg"/>
+                                                        <font key="NSFont" metaFont="user"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -535,7 +527,7 @@ Then the recording can be started by clicking the recording button </string>
                                                     <attributes>
                                                         <color key="NSBackgroundColor" white="0.26515" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="16" name="AppleSDGothicNeo-Medium"/>
+                                                        <font key="NSFont" size="12" name="HiraginoSans-W3"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -546,7 +538,7 @@ Then the recording can be started by clicking the recording button </string>
                                                     <attributes>
                                                         <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="NSColor" red="0.14118" green="0.16078000000000001" blue="0.18038999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="16" name="AkzidenzGroteskBQ-Reg"/>
+                                                        <font key="NSFont" metaFont="user"/>
                                                         <real key="NSKern" value="0.0"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                             <tabStops/>
@@ -558,8 +550,12 @@ Then the recording can be started by clicking the recording button </string>
                                         </textView>
                                     </subviews>
                                 </clipView>
-                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="0.035714285714285712" horizontal="NO" id="MB0-Qq-kSj">
-                                    <rect key="frame" x="434" y="0.0" width="16" height="300"/>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="RuS-qF-GwR">
+                                    <rect key="frame" x="-100" y="-100" width="733" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="MB0-Qq-kSj">
+                                    <rect key="frame" x="717" y="0.0" width="16" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -571,7 +567,7 @@ Then the recording can be started by clicking the recording button </string>
                 </viewController>
                 <customObject id="FKx-CQ-zJG" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2032" y="375"/>
+            <point key="canvasLocation" x="2305" y="380"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -585,7 +581,7 @@ Then the recording can be started by clicking the recording button </string>
                                 <rect key="frame" x="18" y="175" width="38" height="20"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="name" id="Kzs-xs-ZSU">
-                                    <font key="font" size="13" name="AkzidenzGroteskBQ-Medium"/>
+                                    <font key="font" metaFont="systemBold"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -594,7 +590,7 @@ Then the recording can be started by clicking the recording button </string>
                                 <rect key="frame" x="20" y="100" width="68" height="19"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" lineBreakMode="truncatingTail" allowsUndo="NO" placeholderString="0.0s" id="d6l-LF-Khc">
-                                    <font key="font" size="13" name="AkzidenzGroteskBQ-Reg"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -619,16 +615,16 @@ Then the recording can be started by clicking the recording button </string>
                                 <rect key="frame" x="18" y="151" width="70" height="19"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" lineBreakMode="truncatingTail" placeholderString="filename" usesSingleLineMode="YES" id="nkd-8B-HwD">
-                                    <font key="font" size="13" name="AkzidenzGroteskBQ-Reg"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xsp-Ja-ck1">
-                                <rect key="frame" x="20" y="121" width="54" height="20"/>
+                                <rect key="frame" x="20" y="121" width="59" height="20"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="duration" id="k28-uS-ZLu">
-                                    <font key="font" size="13" name="AkzidenzGroteskBQ-Medium"/>
+                                    <font key="font" metaFont="systemBold"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -679,7 +675,7 @@ Then the recording can be started by clicking the recording button </string>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="exS-wC-OEf">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" size="13" name="AkzidenzGroteskBQ-Reg"/>
+                                                <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
                                                 <action selector="setPath:" target="XfG-lQ-9wD" id="1V1-Y4-YAZ"/>
@@ -697,46 +693,46 @@ Then the recording can be started by clicking the recording button </string>
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eo2-Pc-Cnq">
-                                            <rect key="frame" x="22" y="37" width="24" height="17"/>
+                                            <rect key="frame" x="19" y="37" width="31" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="new" id="IoZ-FP-KUn">
-                                                <font key="font" size="11" name="AkzidenzGroteskBQ-Reg"/>
+                                                <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uU7-OF-VoX">
-                                            <rect key="frame" x="162" y="37" width="33" height="17"/>
+                                            <rect key="frame" x="158" y="37" width="41" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="pause" id="RaN-Rd-CbA">
-                                                <font key="font" size="11" name="AkzidenzGroteskBQ-Reg"/>
+                                                <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pa-5k-0hh">
-                                            <rect key="frame" x="202" y="37" width="35" height="17"/>
+                                            <rect key="frame" x="199" y="37" width="41" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="record" id="onI-oh-EQG">
-                                                <font key="font" size="11" name="AkzidenzGroteskBQ-Reg"/>
+                                                <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dby-F9-wdl">
-                                            <rect key="frame" x="247" y="37" width="25" height="17"/>
+                                            <rect key="frame" x="245" y="37" width="29" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="stop" id="UCH-SS-lZo">
-                                                <font key="font" size="11" name="AkzidenzGroteskBQ-Reg"/>
+                                                <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lEg-Yv-XhS">
-                                            <rect key="frame" x="395" y="37" width="24" height="17"/>
+                                            <rect key="frame" x="392" y="37" width="31" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="help" id="GT7-03-EoJ">
-                                                <font key="font" size="11" name="AkzidenzGroteskBQ-Reg"/>
+                                                <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -764,7 +760,7 @@ Then the recording can be started by clicking the recording button </string>
         </scene>
     </scenes>
     <resources>
-        <image name="NSApplicationIcon" width="128" height="128"/>
+        <image name="NSApplicationIcon" width="32" height="32"/>
         <image name="NSTouchBarPauseTemplate" width="11" height="30"/>
         <image name="NSTouchBarRecordStartTemplate" width="14" height="30"/>
         <image name="NSTouchBarRecordStopTemplate" width="12" height="30"/>
